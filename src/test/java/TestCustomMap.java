@@ -10,7 +10,7 @@ public class TestCustomMap {
 
     @Test
     public void putTest(){
-        CustomMap<Integer, Long> map = new CustomMap<Integer, Long>(30);
+        CustomMap map = new CustomMap(30);
         boolean isPutWork = map.put(40, (long)4);
 
         assertEquals(true, isPutWork);
@@ -18,14 +18,14 @@ public class TestCustomMap {
 
     @Test
     public void getTest(){
-        CustomMap<Integer, Long> map = new CustomMap<Integer, Long>();
+        CustomMap map = new CustomMap();
         map.put(20, (long)4);
         assertEquals(new Long(4), map.get(20));
     }
 
     @Test
     public void sizeTest(){
-        CustomMap<Integer, Long> map = new CustomMap<Integer, Long>();
+        CustomMap map = new CustomMap();
         map.put(10, (long)4);
         map.put(12, (long)55);
         map.put(12, (long)55);

@@ -2,8 +2,8 @@ package com.ak;
 
 import java.util.Arrays;
 
-public class CustomMap<K, V> {
-    private final int defaultSize = 500;
+public class CustomMap {
+    private final int defaultSize = 40;
     private Entry[] entries;
     private int size = 0;
 
@@ -15,7 +15,7 @@ public class CustomMap<K, V> {
         entries = new Entry[size];
     }
 
-    public CustomMap(CustomMap<Integer, Long> map) {
+    public CustomMap(CustomMap map) {
         entries = map.getEntries();
     }
 
