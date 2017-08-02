@@ -33,7 +33,7 @@ public class CustomMap {
     }
 
     private void ensureCapacity(int key) {
-        entries = Arrays.copyOf(entries, key + 1000);
+        entries = Arrays.copyOf(entries, key + key * 0.5);
     }
 
     public Long get(Integer key) {
